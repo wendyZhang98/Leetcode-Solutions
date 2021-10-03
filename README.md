@@ -12,7 +12,7 @@ Algorithm Basics: \
 To Do List: \
 💚String: https://www.geeksforgeeks.org/string-data-structure/ \
 💚Array: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/ \
-💚Binary Tree: Interview Questions and Practice Problems: https://medium.com/techie-delight/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f \
+💚Binary Tree: https://medium.com/techie-delight/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f \
 💚Linked List: https://www.geeksforgeeks.org/top-20-linked-list-interview-question/ \
 💚Stack & Queue: https://www.geeksforgeeks.org/stack-data-structure/ 
 

@@ -14,7 +14,7 @@ Algorithm Basics: \
 🧡Tutorialspoint: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.htm \
 🧡GeeksForGeeks: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting \
 🧡Fucking-Algorithms: https://github.com/labuladong/fucking-algorithm \
-🧡Algorithm Base：https://github.com/chefyuan/algorithm-base \
+🧡Algorithm Base：https://github.com/chefyuan/algorithm-base 
 
 
 To Do List: \

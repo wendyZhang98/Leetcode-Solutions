@@ -18,8 +18,8 @@ Algorithm Basics: \
 
 
 To Do List: \
-🟢https://github.com/keon/algorithms
-🟢https://github.com/Jack-Lee-Hiter/AlgorithmsByPython \ 
+🟢https://github.com/keon/algorithms \
+🟢https://github.com/Jack-Lee-Hiter/AlgorithmsByPython 
 
 💚String: https://www.geeksforgeeks.org/string-data-structure/ \
 💚Array: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/ \

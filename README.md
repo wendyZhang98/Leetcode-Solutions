@@ -7,4 +7,4 @@ Useful Reference: \
 
 Algorithm Basics: \
 🧡Tutorialspoint: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.html \
-🧡GeeksForGeeks: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting \
+🧡GeeksForGeeks: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting 

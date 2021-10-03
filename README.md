@@ -12,7 +12,8 @@ Useful Reference: \
 
 Algorithm Basics: \
 🧡Tutorialspoint: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.htm \
-🧡GeeksForGeeks: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting 
+🧡GeeksForGeeks: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting \
+🧡Fucking-Algorithms: https://github.com/labuladong/fucking-algorithm 
 
 To Do List: \
 💚String: https://www.geeksforgeeks.org/string-data-structure/ \

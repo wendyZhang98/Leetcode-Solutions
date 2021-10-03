@@ -13,9 +13,14 @@ Useful Reference: \
 Algorithm Basics: \
 🧡Tutorialspoint: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.htm \
 🧡GeeksForGeeks: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting \
-🧡Fucking-Algorithms: https://github.com/labuladong/fucking-algorithm 
+🧡Fucking-Algorithms: https://github.com/labuladong/fucking-algorithm \
+🧡Algorithm Base：https://github.com/chefyuan/algorithm-base \
+
 
 To Do List: \
+🟢https://github.com/keon/algorithms
+🟢https://github.com/Jack-Lee-Hiter/AlgorithmsByPython \ 
+
 💚String: https://www.geeksforgeeks.org/string-data-structure/ \
 💚Array: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/ \
 💚Binary Tree: https://medium.com/techie-delight/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f \

@@ -8,3 +8,8 @@ Useful Reference: \
 Algorithm Basics: \
 🧡Tutorialspoint: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.htm \
 🧡GeeksForGeeks: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting 
+
+To Do List:
+💚Top 50 Array Coding Problems for Interviews: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/ \
+💚Top 20 Backtracking Algorithm Interview Questions: https://www.geeksforgeeks.org/top-20-backtracking-algorithm-interview-questions/ \
+💚Binary Tree: Interview Questions and Practice Problems: https://medium.com/techie-delight/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f \

@@ -3,7 +3,10 @@
 This repo consists of problems and answers related to algorithm and data structuer from leetcode. 
 
 Useful Reference: \
-💙动态规划之背包问题：https://zhuanlan.zhihu.com/p/93857890
+💙动态规划的意义：https://www.zhihu.com/question/23995189/answer/613096905 \
+💙动态规划之背包问题：https://zhuanlan.zhihu.com/p/93857890 \
+💙动态规划三大步骤+案例讲解：https://zhuanlan.zhihu.com/p/91582909 \
+💙递推&贪心&搜索&动态规划：https://www.zhihu.com/question/23995189/answer/35429905
 
 Algorithm Basics: \
 🧡Tutorialspoint: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_basics.htm \

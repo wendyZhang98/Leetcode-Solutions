@@ -2,7 +2,7 @@
 
 This repo consists of problems and answers related to algorithm and data structuer from leetcode. 
 
-Useful Reference:
+Useful Reference: \
 💙动态规划之背包问题：https://zhuanlan.zhihu.com/p/93857890
 
 Algorithm Basics:

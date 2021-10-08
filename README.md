@@ -42,12 +42,6 @@ To Do List: \
 
 ## 算法框架：
 
-result = [] \
-def backtrack(路径, 选择列表): \
-    if 满足结束条件: \
-        result.add(路径) \
-        return \
-    for 选择 in 选择列表:
-        做选择
-        backtrack(路径, 选择列表)
-        撤销选择 
+<img width="926" alt="Screen Shot 2021-10-08 at 7 42 31 PM" src="https://user-images.githubusercontent.com/49216429/136635062-2082ab82-cbba-45dc-99b5-a550892f77f6.png">
+
+

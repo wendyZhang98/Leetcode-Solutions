@@ -31,26 +31,25 @@ To Do List: \
 💚Backtracking: https://www.geeksforgeeks.org/top-20-backtracking-algorithm-interview-questions/ \
 💚Dynamic Programming: https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/ 
 
+# 动态规划
+## 算法思路
+- 将一个问题拆成几个子问题，分别求解这些子问题，即可推断出大问题的解
+1. 无后效性: 如果给定某一阶段的状态，则在这一阶段以后过程的发展不受这阶段以前各段状态的影响 \
+2. 最优子结构：大问题的最优解可以由小问题的最优解推出 \
 
-# 回溯问题：
-- https://github.com/labuladong/fucking-algorithm/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4%E7%B3%BB%E5%88%97/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88.md 
-
-## 算法思路：
+# 回溯问题
+## 算法思路
 解决一个回溯问题，实际上就是一个决策树的遍历过程。\
 你只需要思考 3 个问题：\
 1、路径：已经做出的选择。\
 2、选择列表：你当前可以做的选择。\
 3、结束条件：到达决策树底层，无法再做选择的条件。
 
-## 算法框架：
-
+## 算法框架
 <img width="926" alt="Screen Shot 2021-10-08 at 7 42 31 PM" src="https://user-images.githubusercontent.com/49216429/136635062-2082ab82-cbba-45dc-99b5-a550892f77f6.png">
-
 - 其核心就是 for 循环里面的递归，在递归调用之前「做选择」，在递归调用之后「撤销选择」
-
 - 写 backtrack 函数时，需要维护走过的「路径」和当前可以做的「选择列表」，当触发「结束条件」时，将「路径」记入结果集
 
-## 算法习题：
-
+## 算法习题
 - 全排列
 - N 皇后

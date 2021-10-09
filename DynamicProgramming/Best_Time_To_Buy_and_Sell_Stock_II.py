@@ -45,8 +45,8 @@ class Solution:
     def maxProfit(self, prices):
         f1, f2 = -prices[0], 0
         for price in prices[1:]:
-            f1 = max(f1, f2-price)
-            f2 = max(f2, f1+price)
+            f1 = max(f1, f2-price) # 当天持有股票
+            f2 = max(f2, f1+price) # 当天不持有股票
         return f2
 
 

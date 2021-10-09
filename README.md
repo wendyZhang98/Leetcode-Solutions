@@ -31,6 +31,8 @@ To Do List: \
 💚Backtracking: https://www.geeksforgeeks.org/top-20-backtracking-algorithm-interview-questions/ \
 💚Dynamic Programming: https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/ 
 
+<img width="850" alt="Screen Shot 2021-10-08 at 10 10 33 PM" src="https://user-images.githubusercontent.com/49216429/136640272-21dfec2d-b416-41a9-9b25-b8f01bb0f2b9.png">
+
 # 排序
 ### 冒泡排序
 - 交换排序算法（小的元素通过交换慢慢“冒泡”到数列的顶端）
@@ -63,6 +65,17 @@ To Do List: \
 ### 桶排序
 
 ### 基数排序
+
+
+# 二叉树
+### 遍历二叉树
+- 先序遍历：根——>左——>右
+- 中序遍历：左——>根——>右
+- 后序遍历：左——>右——>根
+- 层序遍历：第n层——>第n+1层
+
+# 二分搜索树（BST）
+
 
 
 # 动态规划

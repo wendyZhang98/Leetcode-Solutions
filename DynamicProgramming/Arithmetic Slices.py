@@ -35,8 +35,6 @@
 # 否则 dp[i] = 1 + dp[i - 1]。
 # 结果返回 dp 数组所有元素之和即可。
 
-
-
 class Solution:
     def numberOfArithmeticSlices(self, nums):
         n = len(nums)
@@ -47,3 +45,4 @@ class Solution:
         print(dp)
         return sum(dp)
 print(Solution().numberOfArithmeticSlices(nums=[1, 2, 3, 4]))
+

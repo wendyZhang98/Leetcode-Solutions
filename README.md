@@ -19,15 +19,13 @@ Algorithm Basics: \
 
 To Do List: \
 🟢https://github.com/keon/algorithms \
-🟢https://github.com/doocs/leetcode \ 
-🟢https://github.com/Jack-Lee-Hiter/AlgorithmsByPython 
-
+🟢https://github.com/doocs/leetcode \
+🟢https://github.com/Jack-Lee-Hiter/AlgorithmsByPython \
 💚String: https://www.geeksforgeeks.org/string-data-structure/ \
 💚Array: https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/ \
 💚Binary Tree: https://medium.com/techie-delight/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f \
 💚Linked List: https://www.geeksforgeeks.org/top-20-linked-list-interview-question/ \
-💚Stack & Queue: https://www.geeksforgeeks.org/stack-data-structure/ 
-
+💚Stack & Queue: https://www.geeksforgeeks.org/stack-data-structure/ \
 💚Sorting: https://www.geeksforgeeks.org/sorting-algorithms/ \
 💚Backtracking: https://www.geeksforgeeks.org/top-20-backtracking-algorithm-interview-questions/ \
 💚Dynamic Programming: https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/ 

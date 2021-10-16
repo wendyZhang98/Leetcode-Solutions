@@ -19,6 +19,7 @@ Algorithm Basics: \
 
 To Do List: \
 🟢https://github.com/keon/algorithms \
+🟢https://github.com/doocs/leetcode \ 
 🟢https://github.com/Jack-Lee-Hiter/AlgorithmsByPython 
 
 💚String: https://www.geeksforgeeks.org/string-data-structure/ \

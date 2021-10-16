@@ -18,12 +18,18 @@
 # 解释：最低花费方式是从 cost[0] 开始，逐个经过那些 1 ，跳过 cost[3] ，一共花费 6
 
 
+
+### Solution:
+# https://www.pythonf.cn/read/126908
+
 class Solution:
     def minCostClimbingStairs(self, cost):
-        a = b = 0
-        for i in range(1, len(cost)):
-            a, b = b, min(a+cost[i-1], b+cost[i])
-        return b
-
+        n = len(cost)
+        dp = [0] * n
+        dp[0] = cost[0]
+        dp[1] = cost[1]
+        for i in range(2, n):
+            dp[i] = min(dp[i - 1], dp[i - 2]) + cost[i]
+        return min(dp[-1],dp[-2])
 
 print(Solution().minCostClimbingStairs(cost=[10, 15, 20]))

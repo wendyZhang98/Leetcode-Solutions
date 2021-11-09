@@ -21,19 +21,23 @@
 # 从外往里一圈一圈遍历并存储矩阵元素即可
 
 
-###
 class Solution:
     def spiralOrder(self, matrix):
-        def add(i1, j1, i2, j2):
-            if i1 == i2:
-                return [matrix[i1][j] for j in range(j1, j2 + 1)]
-            if j1 == j2:
-                return [matrix[i][j1] for i in range(i1, i2 + 1)]
-            return [matrix[i1][j] for j in range(j1, j2)] + [matrix[i][j2] for i in range(i1, i2)] + [matrix[i2][j] for j in range(j2, j1, -1)] + [matrix[i][j1] for i in range(i2, i1, -1)]
-        m, n = len(matrix), len(matrix[0])
-        i1, j1, i2, j2 = 0, 0, m - 1, n - 1
-        res = []
-        while i1 <= i2 and j1 <= j2:
-            res += add(i1, j1, i2, j2)
-            i1, j1, i2, j2 = i1 + 1, j1 + 1, i2 - 1, j2 - 1
-        return res
+        if not matrix or not matrix[0]:
+            return list()
+        
+        rows, columns = len(matrix), len(matrix[0])
+        order = list()
+        left, right, top, bottom = 0, columns - 1, 0, rows - 1
+        while left <= right and top <= bottom:
+            for column in range(left, right + 1):
+                order.append(matrix[top][column])
+            for row in range(top + 1, bottom + 1):
+                order.append(matrix[row][right])
+            if left < right and top < bottom:
+                for column in range(right - 1, left, -1):
+                    order.append(matrix[bottom][column])
+                for row in range(bottom, top, -1):
+                    order.append(matrix[row][left])
+            left, right, top, bottom = left + 1, right - 1, top + 1, bottom - 1
+        return order

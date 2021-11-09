@@ -27,32 +27,43 @@
 
 
 ### Solution：
-# 解法：“排序 + 双指针”实现。
+# 解法：“排序 + 双指针”实现
+# i in range(0, n-3)
+# j in range(i+1, n-2)
+# k in range(j+1, n-1)
+# k l 双指针
 
 
-
-###
 class Solution:
     def fourSum(self, nums, target):
         n, res = len(nums), []
+        
+        # if there are less than 4 elements
         if n < 4:
             return []
+        
+        # sort the nums_lst
         nums.sort()
-        for i in range(n - 3):
-            if i > 0 and nums[i] == nums[i - 1]:
+        
+        # i, j
+        for i in range(n-3):
+            if i > 0 and nums[i] == nums[i - 1]: # no need to repete i, just continue
                 continue
             for j in range(i + 1, n - 2):
-                if j > i + 1 and nums[j] == nums[j - 1]:
+                if j > i + 1 and nums[j] == nums[j - 1]: # no need to repete j, just continue
                     continue
+                
+                # two pointers method 
+                # k, l
                 k, l = j + 1, n - 1
                 while k < l:
-                    if nums[i] + nums[j] + nums[k] + nums[l] == target:
+                    if nums[i] + nums[j] + nums[k] + nums[l] == target: # solution appears
                         res.append([nums[i], nums[j], nums[k], nums[l]])
-                        k += 1
+                        k += 1 
                         l -= 1
-                        while k < n and nums[k] == nums[k - 1]:
+                        while k < n and nums[k] == nums[k - 1]: # no need to repete k, just continue
                             k += 1
-                        while l > j and nums[l] == nums[l + 1]:
+                        while l > j and nums[l] == nums[l + 1]: # no need to repete l, just continue
                             l -= 1
                     elif nums[i] + nums[j] + nums[k] + nums[l] < target:
                         k += 1

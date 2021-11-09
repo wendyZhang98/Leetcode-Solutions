@@ -52,11 +52,8 @@
 
 ### Solution:
 # 二分查找
-
-
 # 若 nums[m] > nums[r]，说明最小值在 m 的右边
-# 否则说明最小值在 m 的左边（包括 m）
-
+# 否则说明最小值在 m 的左边
 
 class Solution:
     def findMin(self, nums):
@@ -64,9 +61,13 @@ class Solution:
         if nums[l] < nums[r]:
             return nums[0]
         while l < r:
-            m = (l + r) >> 1
+            m = (l + r) // 2
             if nums[m] > nums[r]:
                 l = m + 1
             else:
                 r = m
         return nums[l]
+
+
+print(Solution().findMin(nums=[5,7,9,1,3,4]))
+print(Solution().findMin(nums=[9,2,4,6,7,8]))

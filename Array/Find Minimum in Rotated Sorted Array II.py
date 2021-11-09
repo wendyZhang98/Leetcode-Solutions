@@ -40,12 +40,11 @@
 
 
 
-###
 class Solution:
-    def findMin(self, nums: List[int]) -> int:
+    def findMin(self, nums):
         l, r = 0, len(nums) - 1
         while l < r:
-            m = (l + r) >> 1
+            m = (l + r) // 2
             if nums[m] > nums[r]:
                 l = m + 1
             elif nums[m] < nums[r]:
@@ -54,4 +53,7 @@ class Solution:
                 r -= 1
         return nums[l]
 
+
+print(Solution().findMin(nums=[2,2,2,0,1]))
+print(Solution().findMin(nums=[5,7,9,1,3,4]))
 

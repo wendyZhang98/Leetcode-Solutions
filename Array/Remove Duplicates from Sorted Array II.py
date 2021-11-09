@@ -41,8 +41,6 @@
 # 遍历结果，返回 cur 值即可
 
 
-
-###
 class Solution:
     def removeDuplicates(self, nums):
         n = len(nums)
@@ -55,4 +53,8 @@ class Solution:
             if cnt < 2:
                 nums[cur] = nums[i]
                 cur += 1
+        lst = nums[:cur]
+        print(lst)
         return cur
+
+print(Solution().removeDuplicates(nums=[1, 1, 1, 2, 2, 3]))

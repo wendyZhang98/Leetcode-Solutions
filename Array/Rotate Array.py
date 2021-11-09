@@ -37,7 +37,6 @@
 # 最后翻转 k~ n - 1 范围内的元素，即可得到最终结果：[5, 6, 7, 4, 3, 2, 1] -> [5, 6, 7, 1, 2, 3, 4]
 
 
-###
 class Solution:
     def rotate(self, nums, k):
         """
@@ -51,3 +50,7 @@ class Solution:
         nums[:] = nums[::-1]
         nums[:k] = nums[:k][::-1]
         nums[k:] = nums[k:][::-1]
+
+        return nums
+      
+print(Solution().rotate(nums=[1, 2, 3, 4, 5, 6, 7], k=4))

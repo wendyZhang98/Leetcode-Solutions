@@ -21,24 +21,48 @@
 
 
 ### Solution:
-双指针解决
+# 双指针解决
 
 
-###
+# Method 1
 class Solution:
     def threeSumSmaller(self, nums, target):
-        def threeSumSmaller(nums, start, end, target):
-            count = 0
-            while start < end:
-                if nums[start] + nums[end] < target:
-                    count += (end - start)
-                    start += 1
-                else:
-                    end -= 1
-            return count
+        size = len(nums)
+        ans = 0
 
+        for i in range(size):
+            for j in range(i + 1, size):
+                for k in range(j + 1, size):
+                    if nums[i] + nums[j] + nums[k] < target:
+                        ans += 1
+        return ans
+
+print(Solution().threeSumSmaller(nums=[-2, 0, 1, 3], target=2))
+# time complexity: O(N3)
+# space complexity: O(1)
+
+
+# Method 2
+class Solution:
+    def threeSumSmaller(self, nums, target):
         nums.sort()
-        n, count = len(nums), 0
-        for i in range(n - 2):
-            count += threeSumSmaller(nums, i + 1, n - 1, target - nums[i])
-        return count
+        size = len(nums)
+
+        ans = 0
+
+        for i in range(size - 2):
+            l, r = i + 1, size - 1
+            aim = target - nums[i]
+            while l < r:
+                if nums[l] + nums[r] >= aim:
+                    r -= 1
+                else:
+                    ans += r - l
+                    l += 1
+
+        return ans
+
+print(Solution().threeSumSmaller(nums=[-2, 0, 1, 3], target=2))
+print(Solution().threeSumSmaller(nums=[-2, 0, 1, 3], target=1))
+# time complexity: O(N2)
+# space complexity: O(N)

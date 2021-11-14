@@ -51,3 +51,29 @@ class Solution:
         root.right = right
         root.left = None
         return res
+    
+    
+
+### Method2
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def convertBiNode(self, root):
+        def dfs(root):
+            pre = cur = root
+            if root:
+                if root.left:
+                    pre, cur = dfs(root.left)
+                    cur.right = root
+                    cur = root
+                    root.left = None
+                if root.right:
+                    root.right, cur = dfs(root.right)
+            return pre, cur
+
+        return dfs(root)[0]

@@ -1,0 +1,123 @@
+### Difficult Level: Medium
+### Link: https://www.geeksforgeeks.org/check-sum-covered-uncovered-nodes-binary-tree/
+
+
+### Description:
+# Given a binary tree
+# you need to check whether sum of all covered elements 
+# is equal to 
+# sum of all uncovered elements or not
+# In a binary tree, a node is called Uncovered 
+# if it appears either on left boundary or right boundary
+# Rest of the nodes are called covered
+
+
+### Algorithm:
+# 1) Start from root, go to left and keep going until left child is available
+# if not go to right child and again follow same procedure until you reach a leaf node
+# 2) After step 1 sum of left boundary will be stored
+# now for right part again do the same procedure 
+# but now keep going to right until right child is available
+# if not then go to left child and follow same procedure until you reach a leaf node
+# After above 2 steps sum of all Uncovered node will be stored
+# we can subtract it from total sum and get sum of covered elements and check for equines of binary tree
+
+
+class newNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = self.right = None
+
+def Sum(t):
+    if t == None:
+        return 0
+    return t.key + Sum(t.left) + Sum(t.right)
+ 
+# Recursive function to calculate sum
+# of left boundary elements
+def uncoveredSumLeft(t):
+
+    # If leaf node, then just return its key value
+    if t.left == None and t.right == None:
+        return t.key
+ 
+    # If left is available then go left otherwise go right
+    if t.left != None:
+        return t.key + uncoveredSumLeft(t.left)
+    else:
+        return t.key + uncoveredSumLeft(t.right)
+ 
+# Recursive function to calculate sum of
+# right boundary elements
+def uncoveredSumRight(t):
+
+    # If leaf node, then just return its key value
+    if t.left == None and t.right == None:
+        return t.key
+ 
+    # If right is available then go right otherwise go left
+    if t.right != None:
+        return t.key + uncoveredSumRight(t.right)
+    else:
+        return t.key + uncoveredSumRight(t.left)
+ 
+# Returns sum of uncovered elements
+def uncoverSum(t):
+    
+    # Initializing with 0 in case we
+    # don't have left or right boundary
+    lb = 0
+    rb = 0
+ 
+    if t.left != None:
+        lb = uncoveredSumLeft(t.left)
+    if t.right != None:
+        rb = uncoveredSumRight(t.right)
+ 
+    # returning sum of root node,
+    # left boundary and right boundary
+    return t.key + lb + rb
+ 
+# Returns true if sum of covered and
+# uncovered elements is same.
+def isSumSame(root):
+     
+    # Sum of uncovered elements
+    sumUC = uncoverSum(root)
+ 
+    # Sum of all elements
+    sumT = Sum(root)
+ 
+    # Check if sum of covered and
+    # uncovered is same
+    return (sumUC == (sumT - sumUC))
+ 
+# Helper function to prinorder
+# traversal of binary tree
+def inorder(root):
+    if (root):
+        inorder(root.left)
+        print(root.key, end = " ")
+        inorder(root.right)
+ 
+# Driver Code
+if __name__ == '__main__':
+     
+    # Making above given diagram's
+    # binary tree
+    root = newNode(8)
+    root.left = newNode(3)
+ 
+    root.left.left = newNode(1)
+    root.left.right = newNode(6)
+    root.left.right.left = newNode(4)
+    root.left.right.right = newNode(7)
+ 
+    root.right = newNode(10)
+    root.right.right = newNode(14)
+    root.right.right.left = newNode(13)
+ 
+    if (isSumSame(root)):
+        print("Sum of covered and uncovered is same")
+    else:
+        print("Sum of covered and uncovered is not same")

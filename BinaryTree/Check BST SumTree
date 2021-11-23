@@ -1,6 +1,5 @@
+### Difficulty Level: Medium
 ### Link：https://www.geeksforgeeks.org/check-if-a-given-binary-tree-is-sumtree/
-### Medium-Level
-
 
 
 ### Description:
@@ -9,7 +8,6 @@
 # the value of a node is equal to the sum of the nodes present in its left subtree and right subtree. 
 # An empty tree is SumTree and the sum of an empty tree can be considered as 0. 
 # A leaf node is also considered as SumTree. 
-
 
 
 ### Method 1 (Simple) 
@@ -40,7 +38,6 @@ def isSumTree(node):
  
     if node.data == ls + rs and isSumTree(node.left) and isSumTree(node.right)):
         return 1
- 
     return 0
 
 

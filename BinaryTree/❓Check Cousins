@@ -26,28 +26,27 @@
 # If ‘a’ and ‘b’ are at given level, then finally check if they are not children of same parent
 
 
-class Node:
-	def __init__(self, data):
-		self.data = data
-		self.left = None
-		self.right = None
 
-def isSibling(root, a, b):
+### Solution:
+class newNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+	self.right = None
 
-	# Base Case
+
+def isSibling(root, a, b): 
 	if root is None:
 		return 0
+	return ((root.left == a and root.right == b) or
+		(root.left == b and root.right == a) or
+		isSibling(root.left, a, b) or
+		isSibling(root.right, a, b))
 
-	return ((root.left == a and root.right ==b) or
-			    (root.left == b and root.right == a) or
-			     isSibling(root.left, a, b) or
-			     isSibling(root.right, a, b))
 
-# Recursive function to find level of Node 'ptr' in a binary tree
 def level(root, ptr, lev):
-	
-	# Base Case
-	if root is None :
+	# Recursive function to find level of Node 'ptr' in a binary tree
+	if root is None:
 		return 0
 	if root == ptr:
 		return lev
@@ -56,21 +55,15 @@ def level(root, ptr, lev):
 	l = level(root.left, ptr, lev+1)
 	if l != 0:
 		return l
-
 	# Else search in right subtree
 	return level(root.right, ptr, lev+1)
-
-
-# Returns 1 if a and b are cousins, otherwise 0
+ 
+ 
 def isCousin(root,a, b):
-	
-	# 1. The two nodes should be on the same level in
-	# the binary tree
-	# The two nodes should not be siblings(means that
-	# they should not have the same parent node
-
-	if ((level(root,a,1) == level(root, b, 1)) and
-			not (isSibling(root, a, b))):
+	# The two nodes should be on the same level in the binary tree
+	# The two nodes should not be siblings(means that they should not have the same parent node
+	# Returns 1 if a and b are cousins, otherwise 0
+	if ((level(root, a, 1) == level(root, b, 1)) and not (isSibling(root, a, b))):
 		return 1
 	else:
 		return 0
@@ -90,6 +83,4 @@ root.right.left.right = Node(8)
 node1 = root.left.right
 node2 = root.right.right
 
-print "Yes" if isCousin(root, node1, node2) == 1 else "No"
-
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007)
+print ("Yes") if isCousin(root, node1, node2) == 1 else ("No")

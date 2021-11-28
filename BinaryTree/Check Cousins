@@ -26,13 +26,13 @@
 # If ‘a’ and ‘b’ are at given level, then finally check if they are not children of same parent
 
 
-
 ### Solution:
-class newNode:
-    def __init__(self, key):
-        self.key = key
-        self.left = None
-	self.right = None
+### Solution:
+class Node:
+  def __init__(self, data):
+    self.data = data
+    self.left = None
+    self.right = None
 
 
 def isSibling(root, a, b): 
@@ -83,4 +83,5 @@ root.right.left.right = Node(8)
 node1 = root.left.right
 node2 = root.right.right
 
-print ("Yes") if isCousin(root, node1, node2) == 1 else ("No")
+print ("Yes") if isCousin(root, node1, node2) == 1 else ("No")  
+

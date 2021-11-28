@@ -1,0 +1,169 @@
+### Difficulty Level : Easy
+### Link: https://www.geeksforgeeks.org/check-leaves-level/
+
+
+
+### Description:
+# Given a Binary Tree, check if all leaves are at same level or not. 
+#           12
+#         /    \
+#       5       7       
+#     /          \ 
+#    3            1
+#   Leaves are at same level
+
+#           12
+#         /    \
+#       5       7       
+#     /          
+#    3          
+#    Leaves are Not at same level
+
+
+#           12
+#         /    
+#       5             
+#     /   \        
+#    3     9
+#   /      /
+#  1      2
+#  Leaves are at same level
+
+
+
+### Algorithm:
+### Method1: Recursive
+# The idea is to first find the level of the leftmost leaf and store it in a variable leafLevel
+# Then compare level of all other leaves with leafLevel, if same, return true, else return false
+# We traverse the given Binary Tree in a Preorder fashion
+# An argument leaflevel is passed to all calls
+# The value of leafLevel is initialized as 0 to indicate that the first leaf is not yet seen yet
+# The value is updated when we find first leaf
+# Level of subsequent leaves (in preorder) is compared with leafLevel
+
+### Solution1:
+### Time Complexity: The function does a simple traversal of the tree, so the complexity is O(n).
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+ 
+# Recursive function which check whether all leaves are at same level
+def checkUtil(root, level):
+    if root is None:
+        return True
+    if root.left is None and root.right is None:  # When a leaf node is found first time
+        if check.leafLevel == 0:
+            check.leafLevel = level   # Set first leaf found
+            return True
+        return level == check.leafLevel   # If this is not first leaf node, compare its level with first leaf's level
+    return checkUtil(root.left, level+1) and checkUtil(root.right, level+1) 
+ 
+def check(root):
+    level = 0
+    check.leafLevel = 0
+    return checkUtil(root, level)
+ 
+# Driver program to test above function
+root = Node(12)
+root.left = Node(5)
+root.left.left = Node(3)
+root.left.right = Node(9)
+root.left.left.left = Node(1)
+root.left.right.left = Node(2)
+ 
+if check(root):
+    print ("Leaves are at same level")
+else:
+    print ("Leaves are not at same level")
+    
+    
+### Algorithm:
+### Method2: Iterative
+# It can also be solved by an iterative approach
+# The idea is to iteratively traverse the tree
+# and when you encounter the first leaf node
+# store its level in result variable
+# now whenever you encounter any leaf node
+# compare its level with previously stored result
+# they are the same then proceed for the rest of tree
+# else return false
+
+
+### Solution2: 
+INT_MAX = 2**31
+INT_MIN = -2**31
+
+class newNode:
+  def __init__(self, data):
+    self.data = data
+    self.left = self.right = None
+		
+# return true if all leaf nodes are at same level, else false
+def checkLevelLeafNode(root):
+	if not root :
+		return 1
+
+	# create a queue for level order traversal
+	q = []
+	q.append(root)
+	
+	result = INT_MAX
+	level = 0
+
+	# traverse until the queue is empty
+	while len(q):
+		size = len(q)
+		level += 1
+
+		# traverse for complete level
+		while size > 0 or len(q):
+			temp = q[0]
+			q.pop(0)
+		
+			# check for left child
+			if temp.left:
+				q.append(temp.left)
+
+				# if its leaf node
+				if not temp.left.right and not temp.left.left:
+					# if it's first leaf node then update result
+					if result == INT_MAX:
+						result = level
+					# if it's not first leaf node, then compare the level with
+					# level of previous leaf node
+					elif result != level:
+						return 0				
+				
+			# check for right child
+			if temp.right:
+				q.append(temp.right)
+				# if it's leaf node
+				if not temp.right.left and not temp.right.right:
+					# if it's first leaf node till now, then update the result
+					if result == INT_MAX:
+						result = level
+					# if it is not the first leaf node, then compare the level with level
+					# of previous leaf node
+					elif(result != level):
+						return 0
+				size -= 1
+	return 1
+
+# Driver Code
+if __name__ == '__main__':
+	
+	# construct a tree
+	root = newNode(1)
+	root.left = newNode(2)
+	root.right = newNode(3)
+	root.left.right = newNode(4)
+	root.right.left = newNode(5)
+	root.right.right = newNode(6)
+	
+	result = checkLevelLeafNode(root)
+	if (result) :
+		print("All leaf nodes are at same level")
+	else:
+		print("Leaf nodes not at same level")

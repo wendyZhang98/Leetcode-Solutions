@@ -1,0 +1,48 @@
+### Difficult Level: Medium
+### Link: https://practice.geeksforgeeks.org/problems/quick-sort/1
+
+
+
+### QuickSort Reference:
+### https://en.wikipedia.org/wiki/Quicksort
+### https://zhuanlan.zhihu.com/p/63227573
+
+
+
+### Description:
+# Quick Sort is a Divide and Conquer algorithm
+# It picks an element as pivot and partitions the given array around the picked pivot
+# Given an array arr[], its starting position low and its ending position high.
+# Implement the partition() and quickSort() functions to sort the array
+
+
+
+
+### Solution:
+### Link: https://blog.csdn.net/liangkaiping0525/article/details/82558188
+def quick_sort(lst, i, j):
+    if i >= j:
+        return list
+    pivot = lst[i]
+    low = i
+    high = j
+    while i < j:
+        while i < j and lst[j] >= pivot:
+            j -= 1
+        lst[i] = lst[j]
+        while i < j and lst[i] <= pivot:
+            i += 1
+        lst[j] = lst[i]
+    lst[j] = pivot
+    quick_sort(lst, low, i-1)
+    quick_sort(lst, i+1, high)
+    return lst
+
+
+if __name__=="__main__":
+    lst = [30,24,5,58,18,36,12,42,39]
+    print(f'Before quick sort: {lst}')
+
+    lst = quick_sort(lst, 0, len(lst)-1)
+    print(f'After quick sort: {lst}')
+

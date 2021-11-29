@@ -1,0 +1,143 @@
+### Difficulty Level : Medium
+### Link: https://www.geeksforgeeks.org/check-if-removing-an-edge-can-divide-a-binary-tree-in-two-halves/
+
+
+
+### Description:
+# Given a Binary Tree
+# Find if there exists an edge 
+# whose removal creates two trees of equal size
+
+# Input : root of following tree
+#            5
+#          /   \
+#        1      6    
+#       /      /  \
+#      3      7    4
+# Output : true
+# Removing edge 5-6 creates two trees of equal size
+
+
+# Input : root of following tree
+#            5
+#          /   \
+#        1      6    
+#             /  \
+#            7    4
+#          /  \    \
+#         3    2    8
+# Output : false
+# There is no edge whose removal creates two trees
+# of equal size.
+
+
+
+### Algorithm:
+### Method 1 (Simple):
+# First count number of nodes in whole tree
+# Let count of all nodes be n
+# Now traverse tree and for every node, find size of subtree rooted with this node
+# Let the subtree size be s. If n-s is equal to s, then return true, else false
+
+
+### Solution1:
+### Time complexity of above solution is O(n2) where n is number of nodes in given Binary Tree.
+class newNode:
+	def __init__(self, x):
+		self.data = x
+		self.left = self.right = None
+
+# To calculate size of tree with given root
+def count(root):
+	if root == None:
+		return 0
+	return count(root.left) + count(root.right) + 1
+
+# This function returns true if there is an edge whose removal can divide the tree in two halves n is size of tree
+def checkRec(root, n):
+	if root == None:
+		return False
+    
+	if count(root) == n - count(root):
+		return True
+
+	# Check for rest of the nodes
+	return checkRec(root.left, n) or checkRec(root.right, n)
+
+# This function mainly uses checkRec()
+def check(root):
+	
+	# Count total nodes in given tree
+	n = count(root)
+
+	# Now recursively check all nodes
+	return checkRec(root, n)
+
+# Driver code
+if __name__ == '__main__':
+	root = newNode(5)
+	root.left = newNode(1)
+	root.right = newNode(6)
+	root.left.left = newNode(3)
+	root.right.left = newNode(7)
+	root.right.right = newNode(4)
+
+	if check(root):
+		print("YES")
+	else:
+		print("NO")
+    
+    
+    
+### Method2(Efficient):
+# We can find the solution in O(n) time
+# The idea is to traverse tree in bottom up manner 
+# and while traversing keep updating size and keep checking 
+# if there is a node that follows the required property
+
+### Solution2:
+class Node:
+	def __init__(self, x):
+		self.key = x
+		self.left = None
+		self.right = None
+
+
+def count(node):
+	if node == None:
+		return 0
+	return count(node.left) + count(node.right) + 1
+
+
+def checkRec(root, n):
+	global res
+	if root == None:
+	  return 0
+
+	c = checkRec(root.left, n) + 1 + checkRec(root.right, n)
+	if c == n - c:
+		res = True
+	return c
+
+
+def check(root):
+	n = count(root)
+	checkRec(root, n)
+
+# Driver code
+if __name__ == '__main__':
+	
+	res = False
+	root = Node(5)
+	root.left = Node(1)
+	root.right = Node(6)
+	root.left.left = Node(3)
+	root.right.left = Node(7)
+	root.right.right = Node(4)
+
+	check(root)
+	
+	if res:
+		print("YES")
+	else:
+		print("NO")

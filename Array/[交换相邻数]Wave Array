@@ -32,7 +32,7 @@
 class Solution:
     def convertToWave(self, A, N):
         i = 0
-        while i<N-1:
+        while i< N-1:
             # Swapping two neighbouring elements at a time
             temp = A[i]
             A[i] = A[i+1]

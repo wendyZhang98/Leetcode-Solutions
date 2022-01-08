@@ -2,6 +2,9 @@
 ### https://practice.geeksforgeeks.org/problems/quick-sort/1
 ### https://en.wikipedia.org/wiki/Quicksort
 ### https://zhuanlan.zhihu.com/p/63227573
+
+
+
 ### 复杂度分析: 
 # https://harttle.land/2015/09/27/quick-sort.html
 
@@ -46,6 +49,7 @@ def quick_sort(lst, i, j):
     pivot = lst[i]
     low = i
     high = j
+    
     while i < j:
         while i < j and lst[j] >= pivot:
             j -= 1
@@ -53,6 +57,7 @@ def quick_sort(lst, i, j):
         while i < j and lst[i] <= pivot:
             i += 1
         lst[j] = lst[i]
+       
     lst[j] = pivot
     quick_sort(lst, low, i-1)
     quick_sort(lst, i+1, high)

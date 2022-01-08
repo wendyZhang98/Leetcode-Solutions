@@ -22,7 +22,8 @@
 ### Link: https://blog.csdn.net/liangkaiping0525/article/details/82558188
 def quick_sort(lst, i, j):
     if i >= j:
-        return list
+        return lst
+        
     pivot = lst[i]
     low = i
     high = j

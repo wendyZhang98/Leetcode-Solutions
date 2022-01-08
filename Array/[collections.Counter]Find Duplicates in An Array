@@ -43,8 +43,10 @@ print(Solution().findDuplicates(nums=[1,4,2,4,3]))
 
 
 ### Solution2:
-### Time Complexity:
-### Link: https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/solution/shu-zu-zhong-zhong-fu-de-shu-jian-dan-bi-utnm/
+### Space Complexity: O(1)
+
+### Link: 
+# https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/solution/shu-zu-zhong-zhong-fu-de-shu-jian-dan-bi-utnm/
 
 def findDuplicates(nums):
     if not nums: 

@@ -1,45 +1,67 @@
-### Link:
-# https://stackoverflow.com/questions/18262306/quicksort-with-python
+### Difficult Level: Medium
+### https://practice.geeksforgeeks.org/problems/quick-sort/1
+### https://en.wikipedia.org/wiki/Quicksort
+### https://zhuanlan.zhihu.com/p/63227573
+### 复杂度分析: 
+# https://harttle.land/2015/09/27/quick-sort.html
 
 
-### 快速排序(Quick Sort)是对冒泡排序的一种改进。
-# 其的基本思想:
-# 选一基准元素，依次将剩余元素中小于该基准元素的值放置其左侧，大于等于该基准元素的值放置其右侧；
-# 然后，取基准元素的前半部分和后半部分分别进行同样的处理；
-# 以此类推，直至各子序列剩余一个元素时，即排序完成（类比二叉树的思想)
-
-### 快速排序步骤
-# 首先设定一个分界值(pivot)，通过该分界值将数组分成左右两部分。
-# 将大于或等于分界值的数据集中到数组右边，小于分界值的数据集中到数组的左边。
-# 此时，左边部分中各元素都小于或等于分界值，而右边部分中各元素都大于或等于分界值,这个称为分区（partition）操作。
-# 然后，左边和右边的数据可以独立排序。
-# 对于左侧的数组数据，又可以取一个分界值，将该部分数据分成左右两部分，同样在左边放置较小值，右边放置较大值。
-# 右侧的数组数据也可以做类似处理。
-# 重复上述过程，通过递归（recursive）将左侧部分排好序后，再递归排好右侧部分的顺序。
-# 当左、右两个部分各数据排序完成后，整个数组的排序也就完成了。
 
 
-def quicksort(array):
-    """Sort the array by using quicksort."""
-    less = []
-    equal = []
-    greater = []
+### 快速排序介绍：
+# 快速排序的核心思想是分治：
+# 选择数组中某个数作为基数，
+# 通过一趟排序将要排序的数据分割成独立的两部分，
+# 其中一部分的所有数都比基数小，
+# 另外一部分的所有数都都比基数大，
+# 然后再按此方法对这两部分数据分别进行快速排序，循环递归，最终使整个数组变成有序。
+ 
+    
+   
+  
+### 算法步骤:
+# 从数列中挑出一个元素，称为 "基准"（pivot）;
+# 重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）
+# 在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作；
+# 递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序；
 
-    if len(array) > 1:
-        pivot = array[0]
-        for x in array:
-            if x < pivot:
-                less.append(x)
-            elif x == pivot:
-                equal.append(x)
-            elif x > pivot:
-                greater.append(x)
-        # Don't forget to return something!
-        return quicksort(less) + equal + quicksort(greater) # recursion
-    # You need to handle the part at the end of the recursion
-    # when you only have one element in your array, just return the array
-    else:
-        return array
 
-print(f'After Quick Sort: {quicksort([12, 11, 8, 15, 3, 2])}')
 
+
+### Description:
+# Quick Sort is a Divide and Conquer algorithm
+# It picks an element as pivot and partitions the given array around the picked pivot
+# Given an array arr[], its starting position low and its ending position high.
+# Implement the partition() and quickSort() functions to sort the array
+
+
+
+
+### Solution:
+### Link: https://blog.csdn.net/liangkaiping0525/article/details/82558188
+def quick_sort(lst, i, j):
+    if i >= j:
+        return lst
+    
+    pivot = lst[i]
+    low = i
+    high = j
+    while i < j:
+        while i < j and lst[j] >= pivot:
+            j -= 1
+        lst[i] = lst[j]
+        while i < j and lst[i] <= pivot:
+            i += 1
+        lst[j] = lst[i]
+    lst[j] = pivot
+    quick_sort(lst, low, i-1)
+    quick_sort(lst, i+1, high)
+    return lst
+
+
+if __name__=="__main__":
+    lst = [30,24,5,58,18,36,12,42,39]
+    print(f'Before quick sort: {lst}')
+
+    lst = quick_sort(lst, 0, len(lst)-1)
+    print(f'After quick sort: {lst}')

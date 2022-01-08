@@ -30,25 +30,13 @@
 # in the given array.
 
 
-
-
 ### Solution:
+from collections import Counter
+
 class Solution:
-    def duplicates(self, arr, n): 
- 
-    	for i in range(0, n): 
-    		index = arr[i] % n 
-    		arr[index] += n 
- 
-    	flag = False
-    	res = []
-    	for i in range(0, n): 
-    		if arr[i]//n > 1: 
-    			res.append(i)
-    			flag = True
-    	
-    	if flag == False:
-    	    res.append(-1)
-    	return res
-	    
-print(Solution().duplicates(arr=[1,4,2,4,3], n=5))
+  def findDuplicates(self, nums):
+    count = Counter(nums)
+    nums.clear()
+    return list([i for i in count if count[i] > 1])
+
+print(Solution().findDuplicates(nums=[1,4,2,4,3]))

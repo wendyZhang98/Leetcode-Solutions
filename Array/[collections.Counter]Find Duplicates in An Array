@@ -40,3 +40,23 @@ class Solution:
     return list([i for i in count if count[i] > 1])
 
 print(Solution().findDuplicates(nums=[1,4,2,4,3]))
+
+
+### Solution2:
+### Time Complexity:
+### Link: https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/solution/shu-zu-zhong-zhong-fu-de-shu-jian-dan-bi-utnm/
+
+def findDuplicates(nums):
+    if not nums: 
+      return []
+    
+    res=[]
+    n = len(nums)
+
+    for i in range(n):
+        num = abs(nums[i])
+        if nums[num-1] < 0:
+            res.append(num)
+        else:
+            nums[num-1] = -nums[num-1]
+    return res

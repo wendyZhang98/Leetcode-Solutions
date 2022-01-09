@@ -14,9 +14,7 @@ def insertionSort(arr):
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = key
+    return arr
 
 arr = [12, 11, 13, 5, 6]
-insertionSort(arr)
 print(f"After InsertionSort: {insertionSort(arr)}")
-# for i in range(len(arr)):
-#     print("%d" % arr[i])

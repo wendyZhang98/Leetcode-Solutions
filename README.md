@@ -35,6 +35,8 @@ To Do List: \
 <img width="850" alt="Screen Shot 2021-10-08 at 10 10 33 PM" src="https://user-images.githubusercontent.com/49216429/136640272-21dfec2d-b416-41a9-9b25-b8f01bb0f2b9.png">
 
 # 排序
+🌵插入排序、快速排序、归并排序：https://www.youtube.com/watch?v=uvxHAH3Wq2I \
+
 ### 冒泡排序
 - 交换排序算法（小的元素通过交换慢慢“冒泡”到数列的顶端）
 - 重复走访需要排序的数列，一次比较两个元素，如果顺序错误就将它们调换过来

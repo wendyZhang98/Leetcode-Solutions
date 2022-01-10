@@ -39,8 +39,8 @@
 
 ### Solution:
 # https://leetcode-cn.com/problems/coin-change/solution/322-ling-qian-dui-huan-by-leetcode-solution/
-# 定义 F(i) 为组成金额 i 所需最少的硬币数量
-# F(i) 对应的状态转移方程为 F(i) = min_{j=0,...,n-1}F(i-c_j) + 1
+# 定义 dp(x) 为组成金额 i 所需最少的硬币数量
+# dp(x) 对应的状态转移方程为 dp(x) = min_{j=0,...,n-1}dp(x-c_j) + 1
 # 其中，c_j 代表的是第 j 枚硬币的面值
 
 class Solution:

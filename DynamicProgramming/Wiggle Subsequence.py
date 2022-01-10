@@ -2,7 +2,7 @@
 # https://github.com/doocs/leetcode/blob/main/solution/0300-0399/0376.Wiggle%20Subsequence/README.md
 
 
-W
+
 
 ### Description:
 # 如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为摆动序列。
@@ -26,6 +26,7 @@ W
 
 
 
+
 ### Example:
 # 输入: [1,7,4,9,2,5]
 # 输出: 6
@@ -42,7 +43,7 @@ W
 
 
 ### Solution:
-# 动态规划
+### 动态规划
 # 设 up 表示以前 i 个元素中的某一个元素结尾的最长上升摆动序列的长度
 # down 表示以前 i 个元素中的某一个元素结尾的最长下降摆动序列的长度
 # 初始 up = 1, down = 1

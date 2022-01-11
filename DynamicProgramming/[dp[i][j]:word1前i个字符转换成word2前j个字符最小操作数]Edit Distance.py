@@ -3,13 +3,14 @@
 
 
 
+
 ### Description:
 # 给你两个单词 word1 和 word2，请你计算出将 word1 转换成 word2 所使用的最少操作数
-
 # 你可以对一个单词进行如下三种操作：
 # 插入一个字符
 # 删除一个字符
 # 替换一个字符
+
 
 
 
@@ -20,7 +21,6 @@
 # horse -> rorse (将 'h' 替换为 'r')
 # rorse -> rose (删除 'r')
 # rose -> ros (删除 'e')
-
 
 # 输入：word1 = "intention", word2 = "execution"
 # 输出：5
@@ -40,17 +40,13 @@
 # 转换成 word2 前 j 个字符组成的字符串 word2[0...j-1] 的最小操作次数
 # m, n 分别表示 word1, word2 的长度
 
-# 初始化 dp[i][0] = i（i∈[0, m]），dp[0][j] = j（j∈[0, m]）
+# 初始化 dp[i][0] = i（i∈[0, m]）；dp[0][j] = j（j∈[0, m]）
 
 # i, j 分别从 1 开始遍历，判断 word1[i - 1] 与 word2[j - 1] 是否相等：
 
 # 若 word1[i - 1] == word2[j - 1]，则 dp[i][j] = dp[i - 1][j - 1]
 # 若 word1[i - 1] != word2[j - 1]，则 dp[i][j] = min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
 
-# 其中 dp[i - 1][j] + 1 对应插入操作
-# dp[i][j - 1] + 1 对应删除操作
-# dp[i - 1][j - 1] + 1 对应替换操作
-# 取三者的最小值即可
 
 class Solution:
     def minDistance(self, word1, word2):
@@ -70,6 +66,3 @@ class Solution:
 
 
 print(Solution().minDistance('horse', 'ros'))
-
-
-

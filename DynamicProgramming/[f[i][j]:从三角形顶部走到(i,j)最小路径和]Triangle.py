@@ -2,6 +2,8 @@
 # https://github.com/doocs/leetcode/blob/main/solution/0100-0199/0120.Triangle/README.md
 
 
+
+
 ### Description:
 # 给定一个三角形 triangle ，找出自顶向下的最小路径和。
 # 每一步只能移动到下一行中相邻的结点上。
@@ -10,6 +12,8 @@
 
 ## 进阶：
 # 你可以只使用 O(n) 的额外空间（n 为三角形的总行数）来解决这个问题吗？
+
+
 
 
 ### Example:
@@ -21,6 +25,8 @@
 #  6 "5" 7
 # 4 "1" 8 3
 # 自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）
+
+
 
 
 ### Solution:
@@ -85,6 +91,7 @@ class Solution:
 # 将 i 根据奇偶性映射到其中一个一维数组
 # 那么 i-1 就映射到了另外一个一维数组
 # 通过使用这两个一维数组，交替进行状态转移
+
 
 class Solution:
     def minimumTotal(self, triangle):

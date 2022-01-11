@@ -3,6 +3,7 @@
 
 
 
+
 ### Description:
 # 给定正整数 n，找到若干个完全平方数（比如 1, 4, 9, 16, ...）使得它们的和等于 n
 # 你需要让组成和的完全平方数的个数最少
@@ -12,6 +13,7 @@
 
 # 换句话说，其值等于一个整数自乘的积
 # 例如，1、4、9 和 16 都是完全平方数，而 3 和 11 不是
+
 
 
 
@@ -26,6 +28,7 @@
 
 
 
+
 ### Solution:
 # https://leetcode-cn.com/problems/perfect-squares/solution/python3-dong-tai-gui-hua-by-caiji-ud-bnip/
 
@@ -34,6 +37,7 @@
 # 状态转移：遍历1...i内的平方数 j*j，j由1开始递增
 # dp[i] = min(dp[i], dp[i-j*j]+1)
 # 边界情况：dp[i] = i
+
 
 class Solution:
     def numSquares(self, n):
@@ -44,6 +48,5 @@ class Solution:
                 dp[i] = min(dp[i], dp[i-j*j]+1)
                 j += 1
         return dp[-1]
-
-
-
+    
+print(Solution().numSquares(n=10)) # 1+3**2

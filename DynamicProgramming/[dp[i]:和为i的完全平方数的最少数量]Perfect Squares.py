@@ -33,7 +33,7 @@
 # https://leetcode-cn.com/problems/perfect-squares/solution/python3-dong-tai-gui-hua-by-caiji-ud-bnip/
 
 # 动态规划
-# 状态定义：dp[i] 表示 n 的完全平方数的最少数量
+# 状态定义：dp[i] 表示 i 的完全平方数的最少数量
 # 状态转移：遍历1...i内的平方数 j*j，j由1开始递增
 # dp[i] = min(dp[i], dp[i-j*j]+1)
 # 边界情况：dp[i] = i

@@ -2,10 +2,12 @@
 # https://github.com/doocs/leetcode/blob/main/solution/0700-0799/0746.Min%20Cost%20Climbing%20Stairs/README.md
 
 
+
 ### Description:
 # 数组的每个下标作为一个阶梯，第 i 个阶梯对应着一个非负数的体力花费值 cost[i]（下标从 0 开始）
 # 每当你爬上一个阶梯你都要花费对应的体力值，一旦支付了相应的体力值，你就可以选择向上爬一个阶梯或者爬两个阶梯
 # 请你找出达到楼层顶部的最低花费。在开始时，你可以选择从下标为 0 或 1 的元素作为初始阶梯
+
 
 
 ### Example:
@@ -21,6 +23,12 @@
 
 ### Solution:
 # https://www.pythonf.cn/read/126908
+# 每次向上有两种选择：一次上一格台阶/一次上两格台阶
+# 对于上到 第i阶 来说
+# 可以从 第i-1阶 上到 第i阶，其花费为 cost[i-1]
+# 可以从 第i-2阶 上到 第i阶，其花费为 cost[i-2]
+# dp[i]:上到 第i阶 的最小花费
+# 状态转移方程为：dp[i] = min(dp[i-1], dp[i-2]) + cost[i]
 
 class Solution:
     def minCostClimbingStairs(self, cost):

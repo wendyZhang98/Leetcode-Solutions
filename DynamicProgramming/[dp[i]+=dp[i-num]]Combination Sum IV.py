@@ -48,3 +48,4 @@ class Solution:
                     dp[i] += dp[i - num]
         return dp[-1]
 
+print(Solution().combinationSum4(nums=[1,2,3],target=4))

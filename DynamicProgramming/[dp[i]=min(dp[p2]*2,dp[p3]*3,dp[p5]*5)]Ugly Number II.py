@@ -35,8 +35,6 @@
 
 # 最后返回 dp[n - 1] 即可。
 
-
-
 class Solution:
     def nthUglyNumber(self, n):
         dp = [1] * n
@@ -51,3 +49,5 @@ class Solution:
             if dp[i] == next5:
                 p5 += 1
         return dp[-1]
+
+print(Solution().nthUglyNumber(n=20))

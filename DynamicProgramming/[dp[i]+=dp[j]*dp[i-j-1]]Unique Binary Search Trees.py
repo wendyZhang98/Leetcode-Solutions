@@ -38,5 +38,3 @@ class Solution:
 print(Solution().numTrees(n=3))   # 5
 
 print(Solution().numTrees(n=10))  # 16796
-
-

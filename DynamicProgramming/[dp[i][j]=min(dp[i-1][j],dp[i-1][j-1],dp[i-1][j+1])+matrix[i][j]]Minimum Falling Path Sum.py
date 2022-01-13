@@ -33,18 +33,20 @@
 
 ### Solution:
 # https://leetcode-cn.com/problems/minimum-falling-path-sum/solution/cong-xia-wang-shang-si-kao-de-dong-tai-g-0z1m/
+
+
 class Solution:
     def minFallingPathSum(self, matrix):
-        dp = [[999999] * len(matrix) for _ in range(len(matrix))]  # 设置一个大值防干扰
+        dp = [[999999] * len(matrix) for _ in range(len(matrix))]   
         for i in range(len(matrix)):
-            dp[0][i] = matrix[0][i]  # 第一行不涉及到前面的参数, 所以直接更新出来
+            dp[0][i] = matrix[0][i]
 
         for i in range(1, len(matrix)):
             for j in range(len(matrix)):
-                if j == 0:  # 等于零是在最左边， 此时只有正上和右上有值可取
+                if j == 0:
                     dp[i][j] = min(dp[i-1][j], dp[i-1][j+1]) + matrix[i][j]
 
-                elif j == len(matrix)-1:  # 等于len是在最右边， 此时只有正上和左上有值可取
+                elif j == len(matrix)-1:
                     dp[i][j] = min(dp[i-1][j], dp[i-1][j-1]) + matrix[i][j]
 
                 else:
@@ -66,6 +68,3 @@ class Solution:
                 else:
                     matrix[i][j] += min(matrix[i-1][j-1], matrix[i-1][j], matrix[i-1][j+1])
         return min(matrix[-1])
-
-
-

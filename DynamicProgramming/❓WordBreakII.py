@@ -30,12 +30,37 @@
 
 
 ### Solution:
+# The solutions for this problem go by many names, 
+# such as 🎖Dynamic Programming, 🎖recursion with memoization, 🎖DFS, and 🎖backtracking etc. 
+# They all capture certain traits of the solutions.
+# In essence, all these solutions can all be categorized as variants of Dynamic Programming (DP), as we will discuss in this article.
 
 # As a reminder, with DP, 
 # we break the original problem down to several sub-problems recursively until the sub-problems are small enough to be solved directly. 
 # Then we combine the results of sub-problems to obtain the final solution for the original problem.
 
-### Approach 1: Top-Down Dynamic Programming
+# As one can see, the DP solutions are also the embodiment of the divide-and-conquer principle.
+# To come up a DP solution, the essential step is to represent the solution of the original problem with the results of its sub-problems. 
+# In general, there are two approaches to implement a DP solution, namely 🎖Top-Down and 🎖Bottom-Up. 
+# We would explain in detail how to apply these two approaches to this problem in the following sections. 
+
+
+### 🧩Approach 1: Top-Down Dynamic Programming🧩
+# For any word (denoted as w) in the dictionary, 
+# if it matches with a prefix of the input string, we then can divide the string into two parts: 
+# the word and the postfix, i.e. s=w+postfix.
+
+# For example, the word cat matches with a prefix of the string. As a result, we can divide the string into s=‘cat’+‘sanddog’.
+# The above approach can be considered as a top-down DP. 
+# The reason lies in the part that we adopt the laissez-faire strategy, 
+# i.e. we simply take a first step, while assuming the subsequent steps will figure out on their owns.
+
+# Each node in the graph represents a postfix of the input string. 
+# In particular, we have some nodes with an empty string, which indicates the end of the input string. 
+# Each edge indicates the reduction from one postfix to another. 
+# The label on top of each edge indicates the word that is used to trigger the reduction.
+
+
 class Solution:
     def wordBreak(self, s, wordDict]):
         wordSet = set(wordDict)
@@ -74,7 +99,7 @@ class Solution:
 class Solution:
     def wordBreak(self, s, wordDict):
         # quick check on the characters,
-        #   otherwise it would exceed the time limit for certain test cases.
+        # otherwise it would exceed the time limit for certain test cases.
         if set(Counter(s).keys()) > set(Counter("".join(wordDict)).keys()):
             return []
 

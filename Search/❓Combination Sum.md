@@ -1,8 +1,8 @@
-- https://leetcode.com/problems/combination-sum/
+https://leetcode.com/problems/combination-sum/
 
 
 
-#### Description
+### Description
 - Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. 
 - You may return the combinations in any order.
 - The same number may be chosen from candidates an unlimited number of times. 
@@ -11,7 +11,7 @@
 
 
 
-#### Examples
+### Examples
 | Input | Output | 
 | --- | --- |
 |candidates = [2,3,6,7], target = 7| [[2,2,3],[7]]|
@@ -20,7 +20,7 @@
 
 
 
-#### Solutions:
+### Solutions:
 https://leetcode.com/problems/combination-sum/solution/
 
 - This is one of the problems in the series of combination sum. They all can be solved with the same algorithm, i.e. backtracking.
@@ -30,7 +30,7 @@ https://leetcode.com/problems/combination-sum/solution/
 - For the sake of this article, we will present the backtracking algorithm. Furthermore, we will list some other problems on LeetCode that one can solve with the same algorithm presented here.
 
 
-#### BackTracking:
+### BackTracking:
 - As a reminder, backtracking is a general algorithm for finding all (or some) solutions to some computational problems. 
 - The idea is that it incrementally builds candidates to the solutions, and abandons a candidate ("backtrack") as soon as it determines that this candidate cannot lead to a final solution.
 

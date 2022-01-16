@@ -34,6 +34,12 @@ https://leetcode.com/problems/combination-sum/solution/
 - As a reminder, backtracking is a general algorithm for finding all (or some) solutions to some computational problems. 
 - The idea is that it incrementally builds candidates to the solutions, and abandons a candidate ("backtrack") as soon as it determines that this candidate cannot lead to a final solution.
 
+<img width="1172" alt="Screen Shot 2022-01-16 at 17 42 09" src="https://user-images.githubusercontent.com/49216429/149681071-159c9053-c04e-4e2b-bcfb-ae0005a74b45.png">
+
+- An important detail on choosing the next number for the combination is that we select the candidates in order, where the total candidates are treated as a list.
+- Once a candidate is added into the current combination, we will not look back to all the previous candidates in the next explorations.
+
+<img width="978" alt="Screen Shot 2022-01-16 at 18 32 08" src="https://user-images.githubusercontent.com/49216429/149682665-2fbb28d3-8508-4d74-b2bc-9d947d3e090f.png">
 
 ```
 class Solution:

@@ -52,5 +52,25 @@ class Solution:
 ```
 
 - Approach2: Bottom-Up Dynamic Programming
-<img width="1186" alt="Screen Shot 2022-01-17 at 17 14 18" src="https://user-images.githubusercontent.com/49216429/149842515-78172b04-c3b2-4756-830d-85384f874d02.png">
+<img width="1192" alt="Screen Shot 2022-01-17 at 17 15 54" src="https://user-images.githubusercontent.com/49216429/149842610-a400ccbe-c30e-41c7-8cb4-c3a37fd29214.png">
+<img width="1183" alt="Screen Shot 2022-01-17 at 17 16 06" src="https://user-images.githubusercontent.com/49216429/149842637-985a9680-5bfe-423b-8f44-0c62502d0371.png">
+<img width="1168" alt="Screen Shot 2022-01-17 at 17 16 20" src="https://user-images.githubusercontent.com/49216429/149842647-598b7684-6592-4fa6-bf5d-01a81a2b617c.png">
+
+```
+class Solution:
+    def combinationSum4(self, nums, target):
+        # minor optimization
+        # nums.sort()
+        dp = [0 for i in range(target+1)]
+        dp[0] = 1
+
+        for comb_sum in range(target+1):
+            for num in nums:
+                if comb_sum - num >= 0:
+                    dp[comb_sum] += dp[comb_sum-num]
+                # minor optimization, early stopping.
+                # else:
+                #    break
+        return dp[target]
+```
 

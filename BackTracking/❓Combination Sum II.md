@@ -73,6 +73,8 @@ class Solution:
 
 <img width="1294" alt="Screen Shot 2022-01-17 at 00 06 59" src="https://user-images.githubusercontent.com/49216429/149711154-9af0bac9-5ded-4280-a2bb-bba3f475c022.png">
 
+<img width="1042" alt="Screen Shot 2022-01-17 at 11 11 54" src="https://user-images.githubusercontent.com/49216429/149804275-252fe0d3-ffd7-49a6-84f8-b69a04c439ce.png">
+
 ```
 class Solution:
     def combinationSum2(self, candidates, target):

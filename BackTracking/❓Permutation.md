@@ -20,6 +20,8 @@ https://leetcode.com/problems/permutations/
 ### Solutions:
 <img width="831" alt="Screen Shot 2022-01-17 at 18 17 17" src="https://user-images.githubusercontent.com/49216429/149846695-ba6ed4b6-5594-43fc-aa2c-d066d8d4e14a.png">
 
+<img width="853" alt="Screen Shot 2022-01-17 at 18 31 54" src="https://user-images.githubusercontent.com/49216429/149847562-c46643d4-e2b8-4237-8bc2-916f638442fd.png">
+
 ```
 class Solution:
     def permute(self, nums):

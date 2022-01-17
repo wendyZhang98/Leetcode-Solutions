@@ -72,3 +72,37 @@ class Solution:
 - Approach2: BackTracking with Index
 
 <img width="1294" alt="Screen Shot 2022-01-17 at 00 06 59" src="https://user-images.githubusercontent.com/49216429/149711154-9af0bac9-5ded-4280-a2bb-bba3f475c022.png">
+
+```
+class Solution:
+    def combinationSum2(self, candidates, target):
+
+        def backtrack(comb, remain, curr, results):
+
+            if remain == 0:
+                # make a deep copy of the resulted combination
+                results.append(list(comb))
+                return
+
+            for next_curr in range(curr, len(candidates)):
+
+                if next_curr > curr \
+                  and candidates[next_curr] == candidates[next_curr-1]:
+                    continue
+
+                pick = candidates[next_curr]
+                # optimization: skip the rest of elements starting from 'curr' index
+                if remain - pick < 0:
+                    break
+
+                comb.append(pick)
+                backtrack(comb, remain - pick, next_curr + 1, results)
+                comb.pop()
+
+        candidates.sort()
+
+        comb, results = [], []
+        backtrack(comb, target, 0, results)
+
+        return results
+```

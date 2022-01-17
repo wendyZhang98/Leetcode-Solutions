@@ -22,14 +22,10 @@
 
 ### Solution:
 - The problem asks us to come up with some fixed-length combinations that meet certain conditions.
-- To solve the problem, it would be beneficial to build a combination by hand.
-- If we represent the combination as an array, we then could fill the array one element at a time.
+- To solve the problem, it would be beneficial to build a combination by hand. If we represent the combination as an array, we then could fill the array one element at a time.
+- For example, given the input k=3 and n=9, i.e. the size of the combination is 3, and the sum of the digits in the combination should be 9. Here are a few steps that we could do:
 
-- For example, given the input k=3 and n=9, 
-- i.e. the size of the combination is 3, and the sum of the digits in the combination should be 9. 
-- Here are a few steps that we could do:
-
-
+<img width="825" alt="Screen Shot 2022-01-16 at 19 02 37" src="https://user-images.githubusercontent.com/49216429/149683526-f3ad58ad-9153-4a88-9648-bfc840cd7846.png">
 
 ```
 class Solution:

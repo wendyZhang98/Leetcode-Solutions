@@ -1,6 +1,8 @@
 - https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/2793/
 
 
+
+### Template
 ```
 def backtrack(candidate):
     if find_solution(candidate):
@@ -19,6 +21,7 @@ def backtrack(candidate):
 ```
 
 
+### Explanation
 - Here are a few notes about the above pseudocode. Overall, the enumeration of candidates is done in two levels: 
 - 1). at the first level, the function is implemented as recursion. At each occurrence of recursion, the function is one step further to the final solution.  
 - 2). as the second level, within the recursion, we have an iteration that allows us to explore all the candidates that are of the same progress to the final solution.

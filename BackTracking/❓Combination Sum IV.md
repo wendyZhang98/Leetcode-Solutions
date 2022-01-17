@@ -18,3 +18,11 @@
 
 
 ### Solutions:
+- Overview:
+- At the first glance, the problem seems to be yet another combination-sum problem, 
+- as we have seen several examples before, e.g. Combination Sum, Combination Sum II, and Combination Sum III.
+- However, the nature of this problem is very different from the previous combination-sum problems.
+- The essential algorithm to solve the previous combination-sum problems is called Backtracking. 
+- While for this problem, we should apply the Dynamic Programming algorithm, as one will discover later.
+
+

@@ -28,6 +28,7 @@
 
 <img width="1323" alt="Screen Shot 2022-01-17 at 00 05 06" src="https://user-images.githubusercontent.com/49216429/149711020-76d2f99a-5723-4a19-92a4-92ebef50eddb.png">
 
+```
 class Solution:
     def combinationSum2(self, candidates, target):
 
@@ -66,7 +67,7 @@ class Solution:
                   counter = counter, results = results)
 
         return results
-
+```
 
 - Approach2: BackTracking with Index
 

@@ -27,3 +27,30 @@
 <img width="1198" alt="Screen Shot 2022-01-17 at 16 51 15" src="https://user-images.githubusercontent.com/49216429/149840612-72a3d45c-d789-4425-b527-ea5373b1a1f2.png">
 <img width="1181" alt="Screen Shot 2022-01-17 at 16 56 08" src="https://user-images.githubusercontent.com/49216429/149841015-f6a19a62-2754-45d2-85b6-c17cc952be03.png">
 
+```
+class Solution:
+    def combinationSum4(self, nums, target):
+        # potential optimization
+        # nums.sort()
+
+        @functools.lru_cache(maxsize = None)
+        def combs(remain):
+            if remain == 0:
+                return 1
+
+            result = 0
+            for num in nums:
+                if remain - num >= 0:
+                    result += combs(remain - num)
+                # potential optimization
+                # else:
+                #     break
+
+            return result
+
+        return combs(target)
+```
+
+- Approach2: Bottom-Up Dynamic Programming
+<img width="1186" alt="Screen Shot 2022-01-17 at 17 14 18" src="https://user-images.githubusercontent.com/49216429/149842515-78172b04-c3b2-4756-830d-85384f874d02.png">
+

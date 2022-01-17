@@ -19,6 +19,7 @@ https://leetcode.com/problems/permutations/
 
 ### Solutions:
 <img width="831" alt="Screen Shot 2022-01-17 at 18 17 17" src="https://user-images.githubusercontent.com/49216429/149846695-ba6ed4b6-5594-43fc-aa2c-d066d8d4e14a.png">
+
 ```
 class Solution:
     def permute(self, nums):

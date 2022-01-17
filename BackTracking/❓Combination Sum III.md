@@ -24,6 +24,12 @@
 
 <img width="825" alt="Screen Shot 2022-01-16 at 19 02 37" src="https://user-images.githubusercontent.com/49216429/149683526-f3ad58ad-9153-4a88-9648-bfc840cd7846.png">
 
+
+- The trick is that we pick the candidates in order. We treat the candidate digits as a list with order, i.e. [1, 2, 3, 4, 5, 6, 7, 8. 9]. At any given step, once we pick a digit, e.g. 6, we will not consider any digits before the chosen digit for the following steps, e.g. the candidates are reduced down to [7, 8, 9].
+- With the above strategy, we could ensure that a digit will never be picked twice for the same combination. Also, all the combinations that we come up with would be unique.
+
+
+
 ```
 class Solution:
     def combinationSum3(self, k, n):

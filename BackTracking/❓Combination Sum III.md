@@ -18,6 +18,8 @@
 
 
 ### Solution:
+https://leetcode.com/problems/combination-sum-iii/solution/
+
 - The problem asks us to come up with some fixed-length combinations that meet certain conditions.
 - To solve the problem, it would be beneficial to build a combination by hand. If we represent the combination as an array, we then could fill the array one element at a time.
 - For example, given the input k=3 and n=9, i.e. the size of the combination is 3, and the sum of the digits in the combination should be 9. Here are a few steps that we could do:

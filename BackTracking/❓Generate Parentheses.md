@@ -50,7 +50,7 @@ class Solution(object):
 
 ```
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
+    def generateParenthesis(self, n):
         ans = []
         def backtrack(S = [], left = 0, right = 0):
             if len(S) == 2 * n:

@@ -20,3 +20,4 @@ https://leetcode.com/problems/sudoku-solver/
 ### Solutions:
 <img width="844" alt="Screen Shot 2022-01-18 at 11 03 45" src="https://user-images.githubusercontent.com/49216429/149973516-0dba163f-0528-460f-af6b-b42594718bb8.png">
 <img width="996" alt="Screen Shot 2022-01-18 at 11 10 28" src="https://user-images.githubusercontent.com/49216429/149974656-49122c50-111c-49e6-babd-12c2e37084d8.png">
+<img width="984" alt="Screen Shot 2022-01-18 at 11 30 54" src="https://user-images.githubusercontent.com/49216429/149978203-8a1460a2-c403-4876-8599-d59e9c234581.png">

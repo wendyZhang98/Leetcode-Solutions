@@ -17,6 +17,7 @@ https://leetcode.com/problems/generate-parentheses/
 
 ### Solutions:
 <img width="1249" alt="Screen Shot 2022-01-18 at 00 10 39" src="https://user-images.githubusercontent.com/49216429/149874534-4ff9b599-c551-4eda-aaf2-c2184ad9abc9.png">
+
 ```
 class Solution(object):
     def generateParenthesis(self, n):
@@ -46,6 +47,7 @@ class Solution(object):
 ```
 
 <img width="1214" alt="Screen Shot 2022-01-18 at 00 11 22" src="https://user-images.githubusercontent.com/49216429/149874601-0b497e9c-e225-4c2d-b8e6-87af95efeb72.png">
+
 ```
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:

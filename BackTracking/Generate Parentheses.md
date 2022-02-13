@@ -48,6 +48,8 @@ class Solution(object):
 
 <img width="1214" alt="Screen Shot 2022-01-18 at 00 11 22" src="https://user-images.githubusercontent.com/49216429/149874601-0b497e9c-e225-4c2d-b8e6-87af95efeb72.png">
 
+<img width="929" alt="Screen Shot 2022-02-12 at 20 29 53" src="https://user-images.githubusercontent.com/49216429/153734439-33e95ceb-e832-4cde-b080-a771a062eb60.png">
+
 ```
 class Solution:
     def generateParenthesis(self, n):

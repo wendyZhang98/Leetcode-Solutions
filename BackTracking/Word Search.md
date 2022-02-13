@@ -16,7 +16,7 @@
 
 <img width="832" alt="Screen Shot 2022-02-12 at 23 28 09" src="https://user-images.githubusercontent.com/49216429/153738617-d8d470c2-b2ff-4fba-8eb7-e1ec3acf09a4.png">
 
-"""
+```
 class Solution(object):
     def exist(self, board, word):
         """
@@ -61,4 +61,4 @@ class Solution(object):
 
         # Tried all directions, and did not find any match
         return ret
-"""
+```

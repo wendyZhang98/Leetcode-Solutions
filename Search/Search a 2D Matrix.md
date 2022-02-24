@@ -29,3 +29,7 @@ class Solution:
                         left = pivot_idx + 1
         return False
 ```
+
+### Complexity:
+<img width="535" alt="Screen Shot 2022-02-24 at 00 47 26" src="https://user-images.githubusercontent.com/49216429/155465627-4e7706d2-7b74-4459-8234-53c6e72d668a.png">
+

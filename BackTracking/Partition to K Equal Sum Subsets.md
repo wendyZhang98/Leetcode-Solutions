@@ -17,3 +17,56 @@
 <img width="1100" alt="Screen Shot 2022-02-23 at 19 13 17" src="https://user-images.githubusercontent.com/49216429/155432442-4bf77b54-0029-4324-bb70-977d1e202a16.png">
 <img width="1077" alt="Screen Shot 2022-02-23 at 19 13 30" src="https://user-images.githubusercontent.com/49216429/155432463-2fbeed51-d2e6-4e5b-b73a-511e73fd0f34.png">
 <img width="1091" alt="Screen Shot 2022-02-23 at 19 14 10" src="https://user-images.githubusercontent.com/49216429/155432524-e0557fe7-b893-4185-a77e-8775eca113ac.png">
+<img width="1283" alt="Screen Shot 2022-02-23 at 19 16 55" src="https://user-images.githubusercontent.com/49216429/155432799-5f661b28-82b3-4da2-987e-4a0342ef1f26.png">
+
+```
+class Solution:
+    def canPartitionKSubsets(self, arr: List[int], k: int) -> bool:
+        n = len(arr)
+    
+        # If the total sum is not divisible by k, we can't make subsets.
+        total_array_sum = sum(arr)
+        if total_array_sum % k != 0:
+            return False
+        target_sum = total_array_sum // k
+
+        # Sort in decreasing order.
+        arr.sort(reverse=True)
+
+        taken = [False] * n
+        
+        def backtrack(index, count, curr_sum):
+            n = len(arr)
+      
+            # We made k - 1 subsets with target_sum and the last subset must also have target_sum.
+            if count == k - 1:
+                return True
+            
+            # No need to proceed further.
+            if curr_sum > target_sum:
+                return False
+                
+            # When curr sum reaches target then one subset is made.
+            # Increment count and reset current sum.
+            if curr_sum == target_sum:
+                return backtrack(0, count + 1, 0)
+                
+            # Try not picked elements to make some combinations.
+            for j in range(index, n):
+                if not taken[j]:
+                    # Include this element in current subset.
+                    taken[j] = True
+                    
+                    # If using current jth element in this subset leads to make all valid subsets.
+                    if backtrack(j + 1, count, curr_sum + arr[j]):
+                        return True
+        
+                    # Backtrack step.
+                    taken[j] = False
+    
+            # We were not able to make a valid combination after picking 
+            # each element from the array, hence we can't make k subsets.
+            return False
+        
+        return backtrack(0, 0, 0)
+```

@@ -32,3 +32,6 @@ class Solution:
 
 ### Complexity Analysis:
 <img width="1279" alt="Screen Shot 2022-02-23 at 19 52 26" src="https://user-images.githubusercontent.com/49216429/155436092-2e575eff-b3cd-48c0-b305-19f0836e1f71.png">
+
+
+<img width="910" alt="Screen Shot 2022-02-23 at 19 56 35" src="https://user-images.githubusercontent.com/49216429/155436504-4bdb71bb-5fae-4426-81f1-304524e094a7.png">

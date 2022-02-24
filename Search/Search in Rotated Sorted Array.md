@@ -10,6 +10,10 @@
 ### Solutions:
 <img width="1094" alt="Screen Shot 2022-02-23 at 20 03 58" src="https://user-images.githubusercontent.com/49216429/155437291-3e7b2ea2-69a0-474a-be24-8fc26d12c37e.png">
 
+<img width="1117" alt="Screen Shot 2022-02-23 at 20 08 06" src="https://user-images.githubusercontent.com/49216429/155437705-bded1c66-d3cf-49cb-afc9-80972ac58c56.png">
+<img width="1127" alt="Screen Shot 2022-02-23 at 20 08 18" src="https://user-images.githubusercontent.com/49216429/155437725-b6f54c86-adbb-4e9a-bdb8-2aced7a2b226.png">
+<img width="1052" alt="Screen Shot 2022-02-23 at 20 08 42" src="https://user-images.githubusercontent.com/49216429/155437756-04e2dbd4-d289-4210-8f20-a1019419692d.png">
+
 ```
 class Solution:
     def search(self, nums, target):

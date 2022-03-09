@@ -9,8 +9,8 @@
 
 
 ### Solutions:
-<img width="1051" alt="Screen Shot 2022-03-08 at 23 40 03" src="https://user-images.githubusercontent.com/49<img width="1027" alt="Screen Shot 2022-03-08 at 23 41 20" src="https://user-images.githubusercontent.com/49216429/157374096-60f0b4ba-c1c1-4034-9df7-c2674e6b0073.png">
-216429/157373974-55b66b70-6176-4fef-a18f-e323d562c24a.png">
+<img width="1051" alt="Screen Shot 2022-03-08 at 23 40 03" src="https://user-images.githubusercontent.com/49216429/157373974-55b66b70-6176-4fef-a18f-e323d562c24a.png">
+<img width="1027" alt="Screen Shot 2022-03-08 at 23 41 20" src="https://user-images.githubusercontent.com/49216429/157374096-60f0b4ba-c1c1-4034-9df7-c2674e6b0073.png">
 <img width="1027" alt="Screen Shot 2022-03-08 at 23 42 40" src="https://user-images.githubusercontent.com/49216429/157374216-fa775067-ef35-497b-b91a-ae282d06bec9.png">
 <img width="1042" alt="Screen Shot 2022-03-08 at 23 45 38" src="https://user-images.githubusercontent.com/49216429/157374505-439ea1ff-000f-42db-b0e4-27803450c37d.png">
 <img width="1040" alt="Screen Shot 2022-03-08 at 23 45 59" src="https://user-images.githubusercontent.com/49216429/157374547-e672c865-5d13-4359-8506-e86fa8bf9ab0.png">
@@ -62,4 +62,4 @@ class Solution:
         return -1
         
 ### Complexity:
- ```<img width="1036" alt="Screen Shot 2022-03-08 at 23 51 32" src="https://user-images.githubusercontent.com/49216429/157375145-c66247b7-86df-460f-ab43-e24013080963.png">
+<img width="1036" alt="Screen Shot 2022-03-08 at 23 51 32" src="https://user-images.githubusercontent.com/49216429/157375145-c66247b7-86df-460f-ab43-e24013080963.png">

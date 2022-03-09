@@ -17,7 +17,7 @@
 <img width="1034" alt="Screen Shot 2022-03-08 at 23 46 31" src="https://user-images.githubusercontent.com/49216429/157374631-435c562e-153d-4d96-a6a3-d8c05dd7326c.png">
 <img width="1046" alt="Screen Shot 2022-03-08 at 23 49 35" src="https://user-images.githubusercontent.com/49216429/157374953-bde935ee-2d37-446a-825f-b82e86d5dc38.png">
 
-````
+```
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         
@@ -60,7 +60,8 @@ class Solution:
                 begin = mid + 1
         
         return -1
-        
+```
+
 ### Complexity:
 <img width="1025" alt="Screen Shot 2022-03-08 at 23 53 34" src="https://user-images.githubusercontent.com/49216429/157375357-7847dedf-8200-4de7-84ff-ba727a94bfb1.png">
 

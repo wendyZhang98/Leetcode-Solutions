@@ -1,5 +1,7 @@
-# Link:
+### Link:
 # https://github.com/doocs/leetcode/blob/main/basic/searching/BinarySearch/README.md
+
+
 
 ### 题目
 # 给定一个按照升序排列的长度为 n 的整数数组，以及 q 个查询

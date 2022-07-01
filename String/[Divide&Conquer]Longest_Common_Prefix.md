@@ -39,7 +39,7 @@ class Solution:
         return str1[:index]
 ```
 
-### Complexity Analysis
+### Complexity Analysis:
 <img width="775" alt="Screen Shot 2022-06-30 at 23 46 22" src="https://user-images.githubusercontent.com/49216429/176819506-ace724c6-1e57-4a43-8058-61b8be8b2974.png">
 
 ### Method2: 

@@ -39,3 +39,6 @@ class Solution:
             ans = max(ans, rk - i + 1)
         return ans
 ```
+
+### Complexity Analysis
+<img width="762" alt="Screen Shot 2022-06-30 at 23 22 41" src="https://user-images.githubusercontent.com/49216429/176817206-95da0f3f-4d95-4554-9669-9c8ec55c2604.png">

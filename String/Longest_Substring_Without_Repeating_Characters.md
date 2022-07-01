@@ -1,9 +1,16 @@
-### Link：
-# https://github.com/doocs/leetcode/blob/main/solution/0000-0099/0003.Longest%20Substring%20Without%20Repeating%20Characters/README.md
-# https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/wu-zhong-fu-zi-fu-de-zui-chang-zi-chuan-by-leetc-2/
+Description:
+- https://leetcode.cn/problems/longest-substring-without-repeating-characters/
 
-### 滑动窗口
-### HashMap
+Example: 
+- s = "abcabcbb"
+- 3 ("abc")
+
+- s = "bbbbb"
+- 1 ("b")
+
+- s = "pwwkew"
+- 3 ("wke")
+
 
 class Solution:
     def lengthOfLongestSubstring(self, s):

@@ -1,15 +1,14 @@
 Description:
 - https://leetcode.cn/problems/longest-substring-without-repeating-characters/
 
-Example: 
-- s = "abcabcbb"
-- 3 ("abc")
-
-- s = "bbbbb"
-- 1 ("b")
-
-- s = "pwwkew"
-- 3 ("wke")
+Example1: 
+- input: s = "abcabcbb"
+- output: 3 ("abc")
+Example2:
+- input: s = "bbbbb"
+- output: 1 ("b")
+- input: s = "pwwkew"
+- output: 3 ("wke")
 
 
 class Solution:

@@ -14,7 +14,7 @@
 - input: s = "pwwkew"
 - output: 3 ("wke")
 
-### Solution
+### Solutions:
 - https://leetcode.cn/problems/longest-substring-without-repeating-characters/solution/wu-zhong-fu-zi-fu-de-zui-chang-zi-chuan-by-leetc-2/
 
 <img width="705" alt="Screen Shot 2022-06-30 at 22 24 06" src="https://user-images.githubusercontent.com/49216429/176811043-138364ed-85aa-4320-a302-cd6dfe86a1ee.png">
@@ -40,5 +40,5 @@ class Solution:
         return ans
 ```
 
-### Complexity Analysis
+### Complexity Analysis:
 <img width="762" alt="Screen Shot 2022-06-30 at 23 22 41" src="https://user-images.githubusercontent.com/49216429/176817206-95da0f3f-4d95-4554-9669-9c8ec55c2604.png">

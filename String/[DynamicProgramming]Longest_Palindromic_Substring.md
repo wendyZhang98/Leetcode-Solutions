@@ -34,7 +34,7 @@ class Solution:
         for L in range(2, n + 1):
             # 枚举左边界，左边界的上限设置可以宽松一些
             for i in range(n):
-                # 由 L 和 i 可以确定右边界，即 j - i + 1 = L 得
+                # 由 L 和 i 可以确定右边界，即 j - i + 1 = L 得 
                 j = L + i - 1
                 # 如果右边界越界，就可以退出当前循环
                 if j >= n:

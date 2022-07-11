@@ -8,6 +8,8 @@ This repository consists of my practice of algorithm & data structures since 202
 - [Merge Sorted Array](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DMerge%20Sorted%20Array.md)
 - [Move Zeros](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DMove%20Zeros.md)
 - [Remove Element](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DRemove%20Element.md)
+- [Squares of a Sorted Array](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DSquares%20of%20a%20Sorted%20Array.md)
+
 
 ### 🎖Practice of [SlidingWindows]:
 - [Longest Substring Without Repeating Characters](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/String/%5BSlidingWindow%5DLongest_Substring_Without_Repeating_Characters.md) 

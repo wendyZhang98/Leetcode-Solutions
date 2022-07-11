@@ -1,6 +1,6 @@
 ### Descriptions:
-https://leetcode.com/problems/reverse-only-letters/
-<img width="576" alt="Screen Shot 2022-02-25 at 11 55 21" src="https://user-images.githubusercontent.com/49216429/155755442-47c197f7-08d9-408f-a2bf-c4dcd4a0ca4e.png">
+- https://leetcode.com/problems/reverse-only-letters/
+
 
 ### Examples:
 <img width="601" alt="Screen Shot 2022-02-25 at 11 55 44" src="https://user-images.githubusercontent.com/49216429/155755487-e08ff340-932c-4056-a4b9-4f884dc3d182.png">

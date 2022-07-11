@@ -1,12 +1,27 @@
 ### 🎖Leetcode-Practice
 This repository consists of my practice of algorithm & data structures since 2020.
+
+
+### 🎖Practice of [TwoPointers]:
+- [Reverse Vowels of a String](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/String/%5BTwoPointers%5DReverse_Vowels_of_a_String.md)
+
+### 🎖Practice of [SlidingWindows]:
+- [Longest Substring Without Repeating Characters](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/String/%5BSlidingWindow%5DLongest_Substring_Without_Repeating_Characters.md) 
+
+### 🎖Practice of [DynamicProgramming]:
+- [Longest Palindromic Substring](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/String/%5BDynamicProgramming%5DLongest_Palindromic_Substring.md)
+
+### 🎖Practice of [Divide&Conquer]:
+- [Longest Common Prefix](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/String/%5BDivide%26Conquer%5DLongest_Common_Prefix.md)
+
+
 <img width="850" alt="Screen Shot 2021-10-08 at 10 10 33 PM" src="https://user-images.githubusercontent.com/49216429/136640272-21dfec2d-b416-41a9-9b25-b8f01bb0f2b9.png">
 
 ### 🎖算法讲解 Reference：
-- 十大排序：https://leetcode.cn/circle/discuss/eBo9UB/ 
+- [十大排序](https://leetcode.cn/circle/discuss/eBo9UB/)
 
 ### 🎖刷题指南:
-- 花花酱：https://zxi.mytechroad.com/blog/leetcode-problem-categories/ 
+- [花花酱](https://zxi.mytechroad.com/blog/leetcode-problem-categories/) 
 
 
 ### 🎖排序算法之冒泡排序

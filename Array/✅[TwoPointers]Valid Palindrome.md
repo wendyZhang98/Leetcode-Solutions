@@ -1,6 +1,6 @@
 ### Descriptions:
 https://leetcode.com/problems/valid-palindrome/
-<img width="629" alt="Screen Shot 2022-02-25 at 11 27 26" src="https://user-images.githubusercontent.com/49216429/155751064-03c7fd06-cc44-42bb-88aa-4c7050379ff5.png">
+
 
 
 ### Examples:
@@ -13,19 +13,15 @@ https://leetcode.com/problems/valid-palindrome/
 
 ```
 class Solution:
-    def isPalindrome(self, s: str) -> bool:
-
+    def isPalindrome(self, s):
         i, j = 0, len(s) - 1
-
         while i < j:
             while i < j and not s[i].isalnum():
                 i += 1
             while i < j and not s[j].isalnum():
                 j -= 1
-
             if s[i].lower() != s[j].lower():
                 return False
-
             i += 1
             j -= 1
 

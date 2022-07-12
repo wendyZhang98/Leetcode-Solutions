@@ -1,42 +1,29 @@
-### Link:
-# https://github.com/doocs/leetcode/blob/main/solution/0000-0099/0016.3Sum%20Closest/README.md
+### Descriptions:
+- https://github.com/doocs/leetcode/blob/main/solution/0000-0099/0016.3Sum%20Closest/README.md
+- https://leetcode-cn.com/problems/3sum-closest/solution/zui-jie-jin-de-san-shu-zhi-he-by-leetcode-solution/
+- 给定一个包括 n 个整数的数组 nums 和 一个目标值 target
+- 找出 nums 中的三个整数，使得它们的和与 target 最接近
+- 返回这三个数的和, 假定每组输入只存在唯一答案
 
 
-
-### Description:
-# 给定一个包括 n 个整数的数组 nums 和 一个目标值 target。
-# 找出 nums 中的三个整数，使得它们的和与 target 最接近。
-# 返回这三个数的和。
-# 假定每组输入只存在唯一答案。
-
-# 示例：
-# 输入：nums = [-1, 2, 1, -4], target = 1
-# 输出：2
-# 解释：与 target 最接近的和是 2(-1 + 2 + 1 = 2)
-
-# 提示：
-# 3 <= nums.length <= 10 ^ 3
-# -10 ^ 3 <= nums[i] <= 10 ^ 3
-# -10 ^ 4 <= target <= 10 ^ 4
+### Examples:
+- Input: nums = [-1, 2, 1, -4], target = 1
+- Output: 2
+- 与 target 最接近的和是 2(-1 + 2 + 1 = 2)
 
 
-
-### Solution:
-# 排序 + 双指针解决
-# 枚举 a， 它在数组中的位置为i
-# 为了防止重复枚举，在[i+1，n）范围内枚举 b 和 c
-
-# 对数组进行（升序）排序，借助双指针优化排序
-# 用 pb 和 pc 分别表示指向 b 和 c 的指针
-# 初始时刻，pb 指向位置i+1，即左边界；pc 指向位置n-1，即右边界
-
-# 在每一步枚举的过程中计算 a+b+c 来更新答案
-# 如果 a+b+c >= target，那么将 pc 向左移动一个位置
-# 如果 a+b+c < target，那么将 pb 向右移动一个位置
+### Solutions:
+- 枚举 a， 它在数组中的位置为i
+- 为了防止重复枚举，在 i+1，n 范围内枚举 b 和 c
+- 对数组进行（升序）排序，借助双指针优化排序
+- 用 pb 和 pc 分别表示指向 b 和 c 的指针
+- 初始时刻，pb 指向位置i+1，即左边界；pc 指向位置n-1，即右边界
+- 在每一步枚举的过程中计算 a+b+c 来更新答案
+- 如果 a+b+c >= target，那么将 pc 向左移动一个位置
+- 如果 a+b+c < target，那么将 pb 向右移动一个位置
 
 
-
-# https://leetcode-cn.com/problems/3sum-closest/solution/zui-jie-jin-de-san-shu-zhi-he-by-leetcode-solution/
+```
 class Solution:
     def threeSumClosest(self, nums, target):
         nums.sort()
@@ -78,3 +65,4 @@ class Solution:
                     j = j0
 
         return best
+```

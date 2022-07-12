@@ -4,12 +4,21 @@ This repository consists of my practice of algorithm & data structures since 202
 
 ### 🎖Practice of [TwoPointers]:
 - [Reverse Vowels of a String](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/String/%5BTwoPointers%5DReverse_Vowels_of_a_String.md)
+- [Reverse Only Letters](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DReverse%20Only%20Letters.md)
 - [Container With Most Water](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DContainer%20With%20Most%20Water.md)
 - [Merge Sorted Array](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DMerge%20Sorted%20Array.md)
 - [Move Zeros](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DMove%20Zeros.md)
 - [Remove Element](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DRemove%20Element.md)
 - [Squares of a Sorted Array](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DSquares%20of%20a%20Sorted%20Array.md)
+- [Valid Palindrome](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DValid%20Palindrome.md)
+- [Two Sum II(Sorted Array)](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DTwo%20Sum%20II-Input%20Array%20is%20Sorted.md)
+- [Three Sum](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DThree%20Sum.md)
+- [Three Sum Smaller](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DThree%20Sum%20Smaller.md)
+- [Three Sum Closet](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DThree%20Sum%20Closet.md)
 
+### Practice of [Dictionary]:
+- [Two Sum](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BDictionary%5DTwo%20Sum.md)
+- [Two Sum II (Sorted Array)](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DTwo%20Sum%20II-Input%20Array%20is%20Sorted.md)
 
 ### 🎖Practice of [SlidingWindows]:
 - [Longest Substring Without Repeating Characters](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/String/%5BSlidingWindow%5DLongest_Substring_Without_Repeating_Characters.md) 

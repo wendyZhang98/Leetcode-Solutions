@@ -19,7 +19,7 @@
 
 
 
-### Solution:
+### Solutions:
 - 若 nums[m] > nums[r]，说明最小值在 m 的右边
 - 若 nums[m] < nums[r]，说明最小值在 m 的左边（包括 m)
 - 若相等，无法判断，直接将 r 减 1; 循环比较

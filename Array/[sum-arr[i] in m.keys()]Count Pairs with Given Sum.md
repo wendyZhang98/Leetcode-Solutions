@@ -1,39 +1,26 @@
-### Difficult Level: Easy
-### Link: https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1
+### Descriptions:
+- Link: https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1
+- Given an array of N integers and an integer K
+- Find the number of pairs of elements in the array whose sum is equal to K
+
+
+### Examples: 
+#1
+- Input: N = 4, K = 6; Arr[] = {1, 5, 7, 1}
+- Output: 2
+- arr[0] + arr[1] = 1 + 5 = 6 
+- arr[1] + arr[3] = 5 + 1 = 6.
+
+#2
+- N = 4, X = 2
+- Arr[] = {1, 1, 1, 1}
+- Output: 6
+- Each 1 will produce sum 2 with any 1.
 
 
 
-
-### Description:
-# Given an array of N integers
-# and an integer K
-# find the number of pairs of elements in the array whose sum is equal to K
-
-
-
-
-### Example: 
-# Example 1:
-# Input:
-# N = 4, K = 6
-# arr[] = {1, 5, 7, 1}
-# Output: 2
-# Explanation: 
-# arr[0] + arr[1] = 1 + 5 = 6 
-# and arr[1] + arr[3] = 5 + 1 = 6.
-
-# Example 2:
-# Input:
-# N = 4, X = 2
-# arr[] = {1, 1, 1, 1}
-# Output: 6
-# Explanation: 
-# Each 1 will produce sum 2 with any 1.
-
-
-
-
-### Solution:
+### Solutions:
+```
 class Solution:
     def getPairsCount(self, arr, n, sum):
         m = dict()
@@ -45,7 +32,7 @@ class Solution:
         twice_count = 0
  
         # Iterate through each element and increment the count 
-        # (Notice that every pair is counted twice)
+        # Notice that every pair is counted twice
         for i in range(0, n):
             if sum-arr[i] in m.keys():
                 twice_count += m[sum-arr[i]]
@@ -60,3 +47,4 @@ class Solution:
         return int(twice_count / 2)
         
 print(Solution().getPairsCount(arr=[1, 5, 7, 1], n=4, sum=6))
+```

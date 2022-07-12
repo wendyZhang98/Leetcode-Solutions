@@ -8,9 +8,9 @@ https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
 
 ### Solutions:
-- two pointer
+- Two Pointers
 ```
-def twoSum1(self, numbers, target):
+def TwoSum(self, numbers, target):
     l, r = 0, len(numbers)-1
     while l < r:
         s = numbers[l] + numbers[r]
@@ -22,9 +22,9 @@ def twoSum1(self, numbers, target):
             r -= 1
 ```
 
-- dictionary
+- Dictionary
 ```
-def twoSum2(self, numbers, target):
+def TwoSum(self, numbers, target):
     dic = {}
     for i, num in enumerate(numbers):
         if target-num in dic:
@@ -32,10 +32,10 @@ def twoSum2(self, numbers, target):
         dic[num] = i
 ```
 
-- binary search
+- Binary Search
 ```
-def twoSum(self, numbers, target):
-    for i in xrange(len(numbers)):
+def TwoSum(self, numbers, target):
+    for i in range(len(numbers)):
         l, r = i+1, len(numbers)-1
         tmp = target - numbers[i]
         while l <= r:

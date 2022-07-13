@@ -15,8 +15,12 @@ This repository consists of my practice of algorithm & data structures since 202
 - [Three Sum](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DThree%20Sum.md)
 - [Three Sum Smaller](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DThree%20Sum%20Smaller.md)
 - [Three Sum Closet](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DThree%20Sum%20Closet.md)
+- [Four Sum](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DFour%20Sum.md)
 
-### Practice of [Dictionary]:
+### 🎖Practice of [Binary Search]:
+
+
+### 🎖Practice of [Dictionary]:
 - [Two Sum](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BDictionary%5DTwo%20Sum.md)
 - [Two Sum II (Sorted Array)](https://github.com/wendyZhang98/Leetcode-Practice/blob/master/Array/%E2%9C%85%5BTwoPointers%5DTwo%20Sum%20II-Input%20Array%20is%20Sorted.md)
 
